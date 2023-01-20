@@ -16,9 +16,9 @@ RUN apt update && apt -y install \
                     --sdk_root=/home/@UNAME@/android-tools/android-sdk-linux/cmdline-tools \
                     @SDKINSTALL@ && \
     sudo -u @UNAME@ keytool -genkey -keystore /home/@UNAME@/.android/debug.keystore -v -alias androiddebugkey \
-                            -dname "CN=Android Debug,O=Android,C=US" -keypass android -storepass android \
-                            -keyalg RSA -keysize 2048 -validity 10000 && \
-    rm -rf /sdk.zip /ndk.zip /var/lib/apt/lists/* && \
+                    -dname "CN=Android Debug,O=Android,C=US" -keypass android -storepass android \
+                    -keyalg RSA -keysize 2048 -validity 10000 && \
+    rm -rf /sdk.zip /var/lib/apt/lists/* && \
     ln -s /home/@UNAME@/android-tools/android-sdk-linux/cmdline-tools/platform-tools/adb /usr/local/bin/adb && \
     sudo -u @UNAME@ mkdir \
             /home/@UNAME@/.cache \
