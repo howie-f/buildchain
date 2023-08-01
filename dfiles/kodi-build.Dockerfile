@@ -26,6 +26,7 @@ RUN apt update && apt -y install \
         libssl-dev \
         libtag1-dev \
         libtinyxml-dev \
+        libtinyxml2-dev \
         libtool-bin \
         libudev-dev \
         libunistring-dev \
