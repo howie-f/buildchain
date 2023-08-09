@@ -1,8 +1,9 @@
 #!/bin/bash
-. ./variables.sh
+. ./variables.sh "$@"
 
 IMAGE=le-build
 
+echo "on ${BASETAG}"
 docker run -it --rm \
     --name le-build \
     --env TZ=${CONTTZ} \

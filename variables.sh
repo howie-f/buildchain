@@ -1,6 +1,6 @@
 # choose your base image
 BASEIMG=debian
-BASETAG=bullseye
+BASETAG=${1:-bullseye}
 
 # dont change these
 UNAME=$( whoami )

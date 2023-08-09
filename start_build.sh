@@ -1,8 +1,9 @@
 #!/bin/bash
-. ./variables.sh
+. ./variables.sh "$@"
 
 IMAGE=kodi-build
 
+echo "on ${BASETAG}"
 docker run -it --rm \
     --name build \
     --env TZ=${CONTTZ} \

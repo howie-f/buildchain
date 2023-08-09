@@ -1,8 +1,9 @@
 #!/bin/bash
-. ./variables.sh
+. ./variables.sh "$@"
 
 IMAGE=android-build
 
+echo "on ${BASETAG}"
 docker run -it --rm \
     --name android-build \
     --env TZ=${CONTTZ} \

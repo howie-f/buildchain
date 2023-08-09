@@ -2,7 +2,7 @@
 
 which curl &> /dev/null || { echo "please install curl first!"; exit 1; }
 
-. ./variables.sh
+. ./variables.sh "$@"
 
 USERSETUP_IMAGE () {
 sed -e "s|@UNAME@|${UNAME}|" \
@@ -98,6 +98,8 @@ sed -e "s|@IDEDEB@|${VSCODEDEB}|" \
     ./dfiles/kodi-devel.Dockerfile | \
 docker build --tag ${UNAME}/kodi-devel:${BASETAG}-vscode-latest -
 }
+
+echo "building images based on ${BASETAG}"
 
 USERSETUP_IMAGE
 BUILDERS_IMAGE

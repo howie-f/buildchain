@@ -1,5 +1,5 @@
 #!/bin/bash
-. ./variables.sh
+. ./variables.sh "$@"
 
 IMAGE=kodi-devel
 
@@ -9,6 +9,7 @@ case "${IDE}" in
 *) echo "something wrong!" && exit 1;;
 esac
 
+echo "on ${BASETAG}"
 docker run -it --rm \
     --name devel \
     --env TZ=${CONTTZ} \
