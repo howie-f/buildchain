@@ -20,6 +20,7 @@ RUN apt update && apt -y install \
         liblzo2-dev \
         libmariadb-dev \
         libmicrohttpd-dev \
+        libpcre3-dev \
         libpulse-dev \
         libpython3-dev \
         libsqlite3-dev \
