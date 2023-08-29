@@ -5,7 +5,7 @@ IMAGE=android-build
 
 echo "on ${BASETAG}"
 docker run -it --rm \
-    --name android-build \
+    --name android-build-${BASETAG} \
     --env TZ=${CONTTZ} \
     --env LC_ALL=${CONTLCALL} \
     --user ${UNAME} \

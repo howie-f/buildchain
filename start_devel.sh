@@ -11,7 +11,7 @@ esac
 
 echo "on ${BASETAG}"
 docker run -it --rm \
-    --name devel \
+    --name devel-${BASETAG} \
     --env TZ=${CONTTZ} \
     --env LC_ALL=${CONTLCALL} \
     --user ${UNAME} \

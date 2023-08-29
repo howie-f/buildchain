@@ -5,7 +5,7 @@ IMAGE=le-build
 
 echo "on ${BASETAG}"
 docker run -it --rm \
-    --name le-build \
+    --name le-build-${BASETAG} \
     --env TZ=${CONTTZ} \
     --env LC_ALL=${CONTLCALL} \
     --user ${UNAME} \

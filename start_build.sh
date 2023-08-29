@@ -5,7 +5,7 @@ IMAGE=kodi-build
 
 echo "on ${BASETAG}"
 docker run -it --rm \
-    --name build \
+    --name build-${BASETAG} \
     --env TZ=${CONTTZ} \
     --env LC_ALL=${CONTLCALL} \
     --user ${UNAME} \
