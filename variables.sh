@@ -1,6 +1,6 @@
 # choose your base image
 BASEIMG=debian
-BASETAG=${1:-bullseye}
+BASETAG=${1:-bookworm}
 
 # dont change these
 UNAME=$( whoami )
