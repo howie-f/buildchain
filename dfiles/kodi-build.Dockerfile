@@ -5,10 +5,13 @@ RUN apt update && apt -y install \
         cmake \
         libasound2-dev \
         libass-dev \
+        libdav1d-dev \
         libdbus-1-dev \
         libdrm-dev \
         libegl1-mesa-dev \
         libegl-dev \
+        libflatbuffers-dev \
+        libfmt-dev \
         libfstrcmp-dev \
         libgbm-dev \
         libgif-dev \
@@ -23,6 +26,7 @@ RUN apt update && apt -y install \
         libpcre3-dev \
         libpulse-dev \
         libpython3-dev \
+        libspdlog-dev \
         libsqlite3-dev \
         libssl-dev \
         libtag1-dev \
