@@ -34,6 +34,7 @@ RUN apt update && apt -y install \
         libtinyxml2-dev \
         libtool-bin \
         libudev-dev \
+        libudfread-dev \
         libunistring-dev \
         libva-dev \
         libx11-dev \
