@@ -47,8 +47,8 @@ RUN apt update && apt -y install \
         nasm \
         pkg-config \
         rapidjson-dev \
-        swig && \
-    mkdir -p /mold/build && wget @MOLD@ -qO - | \
+        swig
+RUN mkdir -p /mold/build && wget @MOLD@ -qO - | \
           tar --strip-components=1 --directory=/mold -xz && \
     cd /mold/build && \
     cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=c++ /mold && \
