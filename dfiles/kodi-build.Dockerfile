@@ -24,6 +24,7 @@ RUN apt update && apt -y install \
         libmariadb-dev \
         libmicrohttpd-dev \
         libpcre3-dev \
+        libpipewire-0.3-dev \
         libpulse-dev \
         libpython3-dev \
         libspdlog-dev \
