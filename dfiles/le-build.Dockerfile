@@ -11,6 +11,7 @@ RUN apt update && apt -y install \
         patch \
         patchutils \
         perl \
+        rdfind \
         xfonts-utils \
         xsltproc \
         xz-utils \
