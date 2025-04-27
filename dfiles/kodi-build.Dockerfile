@@ -3,6 +3,7 @@ RUN apt update && apt -y install \
         autopoint \
         ccache \
         cmake \
+        nlohmann-json3-dev \
         libasound2-dev \
         libass-dev \
         libavahi-client-dev \
