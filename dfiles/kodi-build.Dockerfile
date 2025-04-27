@@ -7,6 +7,7 @@ RUN apt update && apt -y install \
         libasound2-dev \
         libass-dev \
         libavahi-client-dev \
+        libbluray-dev \
         libdav1d-dev \
         libdbus-1-dev \
         libdrm-dev \
