@@ -3,6 +3,7 @@ RUN apt update && apt -y install \
         bc \
         bzip2 \
         file \
+        libelf-dev \
         libjson-perl \
         libncurses5-dev \
         libparse-yapp-perl \
