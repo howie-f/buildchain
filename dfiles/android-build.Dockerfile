@@ -4,6 +4,7 @@ RUN apt update && apt -y install \
         lib32stdc++6 \
         lib32z1 \
         lib32z1-dev \
+        openjdk-17-jdk-headless \
         zlib1g-dev && \
     wget @SDKZIP@ -qO /sdk.zip && \
     sudo -u @UNAME@ mkdir -p /home/@UNAME@/android-tools/android-sdk-linux/cmdline-tools && \
